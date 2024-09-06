@@ -1,7 +1,6 @@
-// @ts-nocheck
-import http from 'http'
-import fs from 'fs';
-import path from 'path';
+const http = require('http');
+const fs =  require('fs');
+const path = require('path');
 
 // посмотреть как можно узнавать какое устройство
 http.createServer(function (req, res) {
