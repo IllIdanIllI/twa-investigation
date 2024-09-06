@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: 20.x
       - name: Build and run
-        run:
-          yarn
+        run: |
+          yarn install
           yarn server-build
           yarn server-run
