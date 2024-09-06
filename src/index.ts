@@ -7,7 +7,7 @@ import { Telegraf, Markup } from 'telegraf'
 
 console.log('start')
 const bot = new Telegraf(process.env.T_TOKEN!)
-console.log(process.env.T_TOKEN);
+// console.log(process.env.T_TOKEN);
 
 // переделываем на телеграф 
 enum Command {

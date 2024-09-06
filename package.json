@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "yarn build && node --env-file=.env build/scripts/index.js & yarn server",
-    "server": "ts-node server/index.ts"
+    "server": "yarn server build && node server/index.js",
+    "server:build": "tsc server/index.ts"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
