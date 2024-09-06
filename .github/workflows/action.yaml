@@ -15,7 +15,6 @@ jobs:
       - name: Install and run
         working-directory: client-app
         run: |
-          npm install yarn -g
           yarn install
           yarn dev
           
@@ -29,7 +28,6 @@ jobs:
           node-version: 20.x
       - name: Build and run
         run:
-          npm install yarn -g
           yarn
-          yarn server:build
-          yarn server:run
+          yarn server-build
+          yarn server-run
